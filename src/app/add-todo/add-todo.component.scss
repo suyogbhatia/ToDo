@@ -1,0 +1,106 @@
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+.box-tile {
+  text-align: center;
+  background: #1565c0;
+  color: #fff;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 3rem;
+  line-height: 3rem;
+}
+.flex{
+    display: flex;
+    height: 80%;
+}
+.box1{
+    margin-top: 7%;
+    margin-left: 19%;
+    margin-bottom: 5%;
+    min-width: 23%;
+    border: dotted 1px lightslategray;
+    border-radius: 1%;
+    height: fit-content;
+    padding-bottom: 2%;
+}
+.box2{
+    margin: 7% 0 2% 15%;
+    /* margin-left: 15%; */
+    min-width: 25%;
+    border: dotted 1px lightslategray;
+    border-radius: 1%;
+    height: fit-content;
+    padding-bottom: 1%;
+}
+form{
+    padding:20px;
+}
+
+.input1{
+    height: 40px;
+    border-radius:4px;
+    width: 95%;
+    border: 1px solid lightslategray;
+    font-size: 15px;
+    padding-left: 10px;
+}
+label{
+    font-family: Arial;
+}
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.alert{
+ color: red;
+}
+button{
+  background: #1565c0;
+  color: #fff;
+}
+button:disabled:hover {
+  cursor:not-allowed
+}
+button:enabled:hover {
+  background: #3f51b5;
+}
+.list{
+    padding: 5px;
+}
+.italy{
+    font-style: italic;
+    color: rgb(100, 100, 100);
+    margin-top: 0.5rem;
+}
+.inProgress{
+    width: 100px;
+    border-radius:5%;
+    background-color: gold;
+    float: right;
+    text-align: center;
+    font-size: 11pt;
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.tasks{
+    height: 20%;
+    min-height: 11rem;
+    overflow-y:auto;
+    max-height: 120px;
+}
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0;
+   }
+mat-toolbar {
+  background: #1565c0;
+}
+mat-toolbar span {
+  font-size: 1.3em;
+  color: #fff;
+}
+

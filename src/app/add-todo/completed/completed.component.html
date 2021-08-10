@@ -1,0 +1,13 @@
+<div>
+        <div class="completed-tasks">Completed Tasks:</div>
+
+    <div class="completedTasks">
+        <div class="list" *ngFor="let task of ToDoList">
+           <div *ngIf="task.isCompleted">
+                <div class="left-pad">✔   Title:  {{task.title}} <label class="completed">Completed</label> </div>
+                <hr>
+           </div>
+        </div>
+    </div>
+
+</div>

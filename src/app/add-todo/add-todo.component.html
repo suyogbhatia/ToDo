@@ -1,0 +1,46 @@
+
+<mat-toolbar>
+    <span>ToDo App</span>
+</mat-toolbar>
+<div class="flex">
+    <div class="box1">
+        <div class="box-tile">Add Task</div>
+        <form (ngSubmit)="createToDo(form)" #form="ngForm">
+
+            <label for="tit"><h3>Title:</h3></label>
+            <input class="input1" type="text" id="tit" required ngModel #title="ngModel" name="title" placeholder="Your task title...">
+            <div [hidden]="title.valid || title.pristine" class="alert">
+                This field is required
+            </div><br><br><br>
+
+            <label for="date"><h3>Date:</h3></label>
+            <input class="input1" type="date" id="date" required ngModel #date="ngModel" name="date" >
+            <div [hidden]="date.valid || date.pristine" class="alert">
+                This field is required
+            </div><br><br><br>
+
+            <button [disabled]="form.invalid" type="submit" mat-raised-button><b>Add to List</b></button>
+
+        </form>
+    </div>
+    <div *ngIf="true" class="box2">
+        <div>
+            <div class="box-tile">Tasks List</div>
+            <div class="italy" align="center">Tick it, if you did it!</div>
+            <hr>
+            <div class="tasks">
+                <div *ngFor="let ToDoState of ToDoList">
+                    <div *ngIf="!ToDoState.isCompleted" class="list">
+                            <input type="checkbox" id="myCheck" (change)="taskDone(ToDoState)">&nbsp;
+                            <label for="a">Title: {{ToDoState.title}}&nbsp; Date: {{ToDoState.date | date:'mediumDate'}}<label class="inProgress">In Progress</label></label>
+                            <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div >
+            <app-completed class="completedTasks" [completedTasks]="completed"></app-completed>
+        </div>
+    </div>
+
+</div>

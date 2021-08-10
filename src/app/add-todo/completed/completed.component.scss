@@ -1,0 +1,33 @@
+.left-pad{
+    padding-left: 10px;
+    font-family: Arial;
+}
+.completedTasks{
+    overflow-y:auto;
+    max-height: 13rem;
+    min-height: 10rem;
+    height: 20%;
+}
+.completed{
+    width: 100px;
+    border-radius:5%;
+    background-color:rgb(41, 177, 0);
+    float: right;
+    text-align: center;
+    font-size: 11pt;
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+.list{
+    padding: 5px;
+}
+.completed-tasks {
+  background-color: #1976d2;;
+  display: block;
+  font-size: 1.17em;
+  color: #fff;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
